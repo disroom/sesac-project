@@ -1,71 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도봉이와 함께하는 챗봇</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: lightgreen;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: lightgoldenrodyellow;
+      }
 
-        #chat-container {
-            width: 80%;
-            margin: auto;
-            max-width: 600px;
-            height: 100vh;
-            background-color: lightpink;
-        }
+      #chat-container {
+        width: 80%;
+        margin: auto;
+        max-width: 600px;
+        height: 100vh;
 
-        #chat-box {
-            height: 80%;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            padding: 10px;
-            overflow-y: scroll;
-            background-color: yellow;
-        }
+        background-color: cyan;
+      }
 
-        #user-input {
-            width: 80%;
-        }
+      #chat-box {
+        height: 80%;
+        border: 10px solid blueviolet;
+        margin-bottom: 10px;
+        padding: 30px;
+        overflow-y: scroll;
+        background-color: whitesmoke;
+      }
 
-        #send-button {
-            width: 100px;
-        }
+      #user-input {
+        width: 80%;
+      }
 
-        main {
+      #send-button {
+        width: 100px;
+      }
 
-            height: 100vh;
-            background-color: lightblue
-        }
+      main {
+        height: 100vh;
+        background-color: lightblue;
+      }
 
-        section {
-            border: solid 1px;
-            background-color: lightyellow;
-        }
+      section {
+        border: solid 1px;
+        background-color: lightyellow;
+      }
+      p {
+        color: gray;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        MAIN
-        <section aria-labelledby="chat-title">
-            SECTION
-            <h1 id="chat-title">도봉이와의 대화방</h1>
-            <div id="chat-container">
-                DIV(CHAT-CONTAINER)
-                <div id="chat-box">
-                    DIV(CHAT-BOX)
-                </div>
-                <input type="text" id="user-input" placeholder="메세지를 입력하세요.">
-                <button type="submit" id="send-button">보내기</button>
-            </div>
-        </section>
+      <h3>
+        <i><p>도봉이네 공간</p></i>
+      </h3>
+      <section aria-labelledby="chat-title" ; style="text-align: center">
+        <b><어서오세요></b>
+        <h1 id="chat-title">도봉이와의 대화방</h1>
+        <div id="chat-container" ; style="text-align: center">
+          <b>🍋대화방</b>
+          <div id="chat-box">
+            <h3>
+              <b><ins>대화 log</ins></b>
+            </h3>
+            <br />
+          </div>
+          <input
+            type="text"
+            id="user-input"
+            placeholder="도봉이와 할 말을 정해주세요."
+          />
+          <button type="submit" id="send-button">send</button>
+        </div>
+      </section>
     </main>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
